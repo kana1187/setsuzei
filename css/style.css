@@ -656,6 +656,7 @@ body {
 #contact .submit-button {
   margin: 0 auto;
   display: flex;
+  aline-items: center;
   gap: 32px;
   padding: 10px 80px;
   background-image: linear-gradient(#1b2b80, #111a4c);
