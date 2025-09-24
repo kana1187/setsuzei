@@ -1,7 +1,7 @@
 body {
   background-color: #FFFFFF;
   color: #333333;
-  font-family: "Noto Sans JP";
+  font-family: "Noto Sans JP", "Yu Gothic", "Hiragino Sans", "Meiryo", sans-serif;
   line-height: 1.5;
 }
 
@@ -13,7 +13,7 @@ body {
 .section-title {
   font-size: 48px;
   font-weight: 600;
-  font-family: "Yu Mincho";
+  font-family: "YuMincho", "Yu Mincho", "Hiragino Mincho ProN", "MS PMincho", serif;
   text-align: center;
   line-height: 1.2;
   margin-bottom: 24px;
@@ -40,9 +40,14 @@ body {
   }
 }
 #header {
+  width: 100%;
   padding: 6.5px 64px;
   height: 72px;
-  font-family: "Yu Gothic";
+  font-family: "Yu Gothic", "Hiragino Sans", "Meiryo", sans-serif;
+  background-color: #FFFFFF;
+  position: fixed;
+  top: 0;
+  z-index: 200;
 }
 #header .header-inner {
   margin: auto;
@@ -109,6 +114,7 @@ body {
   display: flex;
   margin: auto;
   padding: 10px 30px;
+  align-items: center;
   gap: 20px;
   height: -webkit-min-content;
   height: -moz-min-content;
@@ -143,14 +149,22 @@ body {
     display: none;
   }
 }
+#first-view {
+  margin-top: 72px;
+}
 #first-view .firstview-img {
   width: 100%;
 }
 
+@media screen and (max-width: 960px) {
+  #first-view {
+    margin-top: 56px;
+  }
+}
 #CTA {
   padding: 40px;
   background-color: #111A4C;
-  font-family: "Yu Gothic";
+  font-family: "Yu Gothic", "Hiragino Sans", "Meiryo", sans-serif;
   position: relative;
 }
 #CTA .cta-wrapper {
@@ -212,6 +226,7 @@ body {
   background-image: linear-gradient(#e1bb78, #b08637 50%, #e1bb78);
   border-radius: 20px;
   display: flex;
+  align-items: center;
   gap: 80px;
   justify-content: center;
 }
@@ -261,7 +276,7 @@ body {
   }
 }
 #intro {
-  font-family: "Yu Gothic";
+  font-family: "Yu Gothic", "Hiragino Sans", "Meiryo", sans-serif;
 }
 #intro .wrapper {
   padding: 110px 140px;
@@ -334,7 +349,7 @@ body {
 }
 #third-intro {
   padding: 0 16px;
-  font-family: "Yu Gothic";
+  font-family: "Yu Gothic", "Hiragino Sans", "Meiryo", sans-serif;
 }
 #third-intro .wrapper {
   padding: 112px 0;
